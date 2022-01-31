@@ -3,18 +3,18 @@
  import PackageDescription
 
  let package = Package(
-     name: "PayUSDK",
+     name: "PayU_SDK_Lite",
      platforms: [.iOS(.v10)],
      products: [
          .library(
-             name: "PayUSDK",
-             targets: ["PayU-SDK-XCFramework"]
+             name: "PayU_SDK_Lite",
+             targets: ["PayU_SDK_Lite"]
          )
      ],
      targets: [
          .binaryTarget(
-             name: "PayU-SDK-XCFramework",
-             path: "libs/PayU_SDK_Lite.xcframework"
+             name: "PayU_SDK_Lite",
+             path: "Frameworks/PayU_SDK_Lite.xcframework"
          )
      ]
  )
